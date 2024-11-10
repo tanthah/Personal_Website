@@ -1,0 +1,178 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #f4ddc6, #bce8ea);
+}
+
+.container{
+    max-width: 100%;
+    height: auto;
+    padding: 0;      /* Loại bỏ khoảng cách đệm (padding) của container */
+    margin: 0;       /* Loại bỏ khoảng cách lề (margin) của container */
+}
+
+header{
+    display: flex;
+    background: white;
+    padding: 5px;   
+    justify-content: space-between;  /* Căn đều khoảng cách giữa các mục */
+    width: 100%;
+    height:  auto;
+    margin: 0;       /* Loại bỏ khoảng cách lề của header */
+/*    padding: 0;      /* Loại bỏ khoảng cách đệm của header */
+    position: relative; /* Giữ cho header ở vị trí mặc định */
+    top: 0;          /* Đảm bảo header nằm sát mép trên của container */
+}
+
+.item-1{
+    width: 370px;
+    height: auto;
+    text-align: center;
+}
+
+.image-hcmute{
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    display: inline-block; /* Giúp ảnh trở thành phần tử khối */
+    margin: 0 auto; /* Đặt margin auto để căn giữa */    
+}
+
+.item-1-text{
+    font-size: 17px;
+    font-family: Franklin Gothic Heavy;
+    max-width: 250px;
+    height: 40px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.item-2{
+    display: flex;
+    width: 78%;
+    height: auto;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Để các hình ảnh tự động xuống dòng nếu không đủ không gian */
+    gap: 7px; /* Khoảng cách giữa các ảnh */
+    
+}
+
+.item-2 img{
+   max-width: 220px;    
+   height: auto;
+   object-fit: cover; /* Giữ nội dung bên trong nếu kích thước ảnh không chuẩn */
+}
+
+.text-1{
+    font-size: 30px;
+    font-family: Sitka Small Semibold;
+    text-align: center;
+    height: auto;
+    padding-top: 20px;
+}
+
+.container1{
+    display: flex;
+    background: black;
+    width: 96%;
+    height: auto;
+    margin: 0 auto;
+    justify-content: space-around; /* Căn đều các phần tử với khoảng cách đều nhau */
+    align-items: center; /* Căn giữa theo trục dọc */
+    margin-top: 30px;
+    padding: 0;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.text-2{
+    font-size: 25px;
+    font-family: Segoe Print;
+    color: white;
+    max-width: 550px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+
+.image-avatar{
+    max-width: 210px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.container2{
+    display: block;
+    background: #d3d2d1;
+    max-width: 600px;
+    height: 270px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
+ 
+}
+
+.container2-text{
+    background: #6087c4;
+    height: 35px;
+    padding-top: 10px;
+    border-top-left-radius: 10px;  /* Bo tròn góc trên bên trái */
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+.table-web{
+    max-height: 200px;
+    border: none;
+    overflow-y: auto; /* Hiển thị thanh cuộn khi nội dung vượt quá chiều cao */
+/*    overflow-y: scroll; /* Thanh cuộn luôn xuất hiện */
+}
+
+a {
+    text-decoration: none; /* Xóa dấu gạch chân từ liên kết */
+}
+
+.web{
+    display: flex;
+    color: black;
+    font-size: 17px;
+    align-items: center; /* display: flex;display: flex;      Căn giữa theo chiều dọc */
+    margin: 0 auto;
+    background: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    max-width: 480px;
+    height: 30px;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    padding-left: 30px;
+}
+
+.web:hover {
+    background-color: #f88872;
+  color: white;
+}
+
+.contact{
+ /*   #8ecfd7  #7ad9c8 */  background: #8ecfd7; 
+    display: block;
+  /*  background: linear-gradient(to right, #f2a3a0, #7ad9c8);
+  */  text-align: center;
+    height: 120px;
+    width: 100%;    
+    justify-content: center;  
+}
+
+.contact p{
+    margin: 10px 0 10px 0;
+}
