@@ -1,0 +1,186 @@
+
+/* Đảm bảo footer luôn nằm dưới cùng */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Phần chính chiếm không gian còn lại để đẩy footer xuống dưới */
+main.main-content {
+    flex: 1;
+    padding: 20px 10px 40px;
+}
+
+/* Reset cơ bản */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, #f4ddc6, #bce8ea);
+}
+
+/* header */
+.header{
+    display: flex;
+    background: white;
+    padding: 10px 12px;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-1{
+    width: 400px;
+    text-align: center;
+}
+
+.image-hcmute{
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.item-1-text{
+    font-size: 17px;
+    font-weight: 700;
+    max-width: 260px;
+    height: 40px;
+    text-align: center;
+    display: block;
+    margin: 0.25rem auto;
+}
+
+.item-2{
+    display: flex;
+    width: 78%;
+    height: auto;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.item-2 img{
+   max-width: 220px;
+   height: auto;
+   object-fit: cover;
+}
+
+/* main content */
+.text-1{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container1{
+    display: flex;
+    background: black;
+    width: 96%;
+    height: auto;
+    margin: 20px auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.text-2{
+    font-size: 18px;
+    color: white;
+    max-width: 400px;
+    line-height: 1.4;
+}
+
+.image-avatar{
+    max-width: 210px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* personal info card */
+.container2{
+    background: #d3d2d1;
+    max-width: 600px;
+    
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+.container2-text{
+    background: #6087c4;
+    height: 45px;
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* cho phép phần thông tin cuộn dọc khi vượt quá chiều cao */
+.table-web {
+    max-height: 180px; 
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 8px; 
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+.table-web::-webkit-scrollbar {
+    width: 8px;
+}
+.table-web::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+.web{
+    display: flex;
+    color: black;
+    font-size: 17px;
+    align-items: center;
+    background: white;
+    margin: 12px auto;
+    max-width: 480px;
+    height: 36px;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    padding-left: 20px;
+}
+
+.web:hover {
+    background-color: #f88872;
+    color: white;
+}
+
+/* footer */
+.contact{
+    background: #8ecfd7;
+    text-align: center;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+
+.contact p{
+    margin: 0;
+    font-size: 14px;
+    color: #08313a;
+}
